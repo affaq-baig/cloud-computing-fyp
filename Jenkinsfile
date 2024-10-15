@@ -13,7 +13,7 @@ pipeline {
             steps {
                 script {
                     // Deploy the application using Docker Compose
-                    sh 'sudo docker-compose down && docker-compose up -d' 
+                    sh 'docker-compose down && docker-compose up -d' 
                 }
             }
         }
